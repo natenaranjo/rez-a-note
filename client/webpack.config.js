@@ -11,7 +11,8 @@ module.exports = () => {
     mode: 'development',
     entry: {
       main: './src/js/index.js',
-      install: './src/js/install.js'
+      install: './src/js/install.js',
+      editor: './src/js/editor.js'
     },
     output: {
       filename: '[name].bundle.js',
@@ -20,26 +21,27 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Rez a Note'
+        title: 'Rez a Note',
       }),
 
       new InjectManifest({
-        swSRC: './src-sw.js',
-        swDest: 'src-sw.js',
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js'
       }),
 
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
         name: 'Rez a Note',
-        description: 'Covert any note with markdown',
-        background_color: '#ffffff',
-        theme_color: '#333333',
+        short_name: 'Notes',
+        description: 'Markdown text editor',
+        background_color: '#225ca3',
+        theme_color: '#225ca3',
         start_url: './',
         publicPath: './',
         icons: [
           {
-            src: path.resolve('src/images/logo.png'),
+            src: path.resolve('src/images/logog.png'),
             sizes: [96, 128, 192, 256, 384, 512],
             destination: path.join('assets', 'icons'),
           },
@@ -60,7 +62,7 @@ module.exports = () => {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
-              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
+              plugins: ['@babel/plugin-proposaal-object-rest-spread', '@babel/transform-runtime'],
             },
           },
         },
