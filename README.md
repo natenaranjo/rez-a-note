@@ -15,7 +15,7 @@
     Explore the document by the links below:
     <br />
     <br />
-    <a href="https://watch.screencastify.com/v/JmbQkSzD5UduvjHJOKc7"><strong>See Demo »</strong></a>
+    <a href="https://ideas-and-texts.herokuapp.com/"><strong>See Live Demo! »</strong></a>
     <br />
     <br />
     <a href="https://github.com/natenaranjo/rez-a-note">Explore the docs </a>
@@ -71,21 +71,13 @@ To install please clone the repo and open up in VSCODE or any editor of your cho
 
 
 To install all the necessary dependencies please run the following:
-> npm install
+> npm run install
+
+To build the project please run the following:
+> npm run build
 
 To start the application:
-> npm run start
-
-Open up Insomnia use the following below to access the database:
-
-Make sure to set the port to what you run in the Server.js.
-
-- Users
-  > http://localhost:3001/api/users/
-
-- Thoughts
-  > http://localhost:3001/api/thoughts
-
+> npm run start:dev
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,29 +95,29 @@ Make sure to set the port to what you run in the Server.js.
 ## Roadmap
 
 - When I open my application in my editor
-    - [ ] I should see a client server folder structure
+    - [x] I should see a client server folder structure
 - When I run 'npm run start' from the root directory
-    - [ ] I find that my application should start up the backend and serve the client
+    - [x] I find that my application should start up the backend and serve the client
 - When I run the text editor application from my terminal
-    - [ ] I find my JavaScript files have been bundled using webpack
+    - [x] I find my JavaScript files have been bundled using webpack
 - When I run my webpack plugins
-    - [ ] I find that I have a generated HTML file, service worker, and a manifest file
+    - [x] I find that I have a generated HTML file, service worker, and a manifest file
 - When I use next-gen JavaScript in my application
-    - [ ] I find that the text editor still functions in the browser without errors
+    - [x] I find that the text editor still functions in the browser without errors
 - When I open the text editor
-    - [ ] I find that IndexDB has immediately created a database storage
+    - [x] I find that IndexDB has immediately created a database storage
 - When I enter content and subsequently click off of the DOM window
-    - [ ] I find that the content in the text editor has been saved within IndexDB
+    - [x] I find that the content in the text editor has been saved within IndexDB
 - When I reopen the text editor after closing it
-    - [ ] I find that the content in the text editor has been retrieved from out IndexDB
+    - [x] I find that the content in the text editor has been retrieved from out IndexDB
 - When I click on the Install button
-    - [ ] I download my web application as an icon on my desktop
+    - [x] I download my web application as an icon on my desktop
 - When I load my web application
-    - [ ] I should have a registered service worker using workbox
+    - [x] I should have a registered service worker using workbox
 - When I register a service worker
-    - [ ] I should have my static assets pre cached upon loading along with subsequent pages and static assets.
+    - [x] I should have my static assets pre cached upon loading along with subsequent pages and static assets.
 - When I deply to Heroku
-    - [ ] I should have proper build scripts for a webpack application.
+    - [x] I should have proper build scripts for a webpack application.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -164,9 +156,6 @@ Make sure to set the port to what you run in the Server.js.
 [issues-url]: https://github.com/natenaranjo/rez-a-note/issues
 [license-shield]: https://img.shields.io/github/license/natenaranjo/rez-a-note.svg?style=for-the-badge
 [license-url]: https://github.com/natenaranjo/rez-a-note/blob/master/LICENSE.txt
-[project-screenshot]: ./public/img/rez-a-note.gif
-[project-screenshot-2]: ./public/img/screenshot-2.png
-[project-screenshot-3]: ./public/img/screenshot-3.png
-[project-screenshot-4]: ./public/img/screenshot-4.png
-[project-screenshot-5]: ./public/img/screenshot-5.png
+[project-screenshot]: ./client/src/images/screenshot.png
+
 [NodeJs-url]: https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-plain.svg
