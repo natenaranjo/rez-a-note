@@ -4,10 +4,10 @@
     "description": "",
     "main": "server.js",
     "scripts": {
-        "server": "nodemon server.js"
+        "server": "nodemon server.js --ignore client"
     },
     "keywords": [],
-    "author": "Nate Naranjo",
+    "author": "",
     "license": "ISC",
     "dependencies": {
         "express": "^4.17.1"
